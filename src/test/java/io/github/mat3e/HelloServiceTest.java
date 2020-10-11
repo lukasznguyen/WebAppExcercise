@@ -28,7 +28,7 @@ public class HelloServiceTest {
     public void test_prepareGreeting_name_returnsGreetingWithName() {
         //given
         var mockRepository = alwaysReturningHelloRepository();
-        var SUT = new HelloService();
+        var SUT = new HelloService(mockRepository);
         String name = "test";
 
         // when
